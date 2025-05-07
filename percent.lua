@@ -58,7 +58,7 @@ Percent.__pow = function(v1, v2)
 end
 
 Percent.__eq = function(v1, v2)
-    return v1[1] == v2[2]
+    return v1[1] == v2[1]
 end
 
 Percent.__unm = function(v)
