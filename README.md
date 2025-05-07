@@ -1,2 +1,3 @@
-# Percent.lua
-a simple class that adds percentages
+LANGUAGES:
+- [EN](README/EN.md)
+- [RU](README/RU.md)
