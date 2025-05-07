@@ -65,7 +65,7 @@ Percent.__eq = function(v1, v2)
         v2 = v2[1]/100
     end
 
-    return v1==v2
+    return v1 == v2
 end
 
 Percent.__unm = function(v)
@@ -73,7 +73,7 @@ Percent.__unm = function(v)
     return v
 end
 
-Percent.__le = function(v)
+Percent.__le = function(v1, v2)
     if type(v1) == "table" and v1.__class == Percent then
         v1 = v1[1]/100
     end
@@ -81,10 +81,10 @@ Percent.__le = function(v)
         v2 = v2[1]/100
     end
 
-    return v1<=v2
+    return v1 <= v2
 end
 
-Percent.__lt = function(v)
+Percent.__lt = function(v1, v2)
     if type(v1) == "table" and v1.__class == Percent then
         v1 = v1[1]/100
     end
@@ -92,7 +92,7 @@ Percent.__lt = function(v)
         v2 = v2[1]/100
     end
 
-    return v1<v2
+    return v1 < v2
 end
 
 Percent.__tostring = function(v)
