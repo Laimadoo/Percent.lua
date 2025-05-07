@@ -9,6 +9,7 @@ local Percent = require("percent")
 local p25 = Percent(25)
 print(40 + p25) -- 50
 print(100 * p25) -- 25
+print(0.25 == p25) -- true
 ```
 
 ## How it works:
