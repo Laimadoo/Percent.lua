@@ -4,11 +4,12 @@ A Lua module for representing percentages as objects.
 Supports arithmetic operations, comparisons, and string conversion.
 
 ## Example:
-
+```lua
 local Percent = require("percent")
 local p25 = Percent(25)
 print(40 + p25) -- 50
 print(100 * p25) -- 25
+```
 
 ## How it works:
 
