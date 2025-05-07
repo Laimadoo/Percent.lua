@@ -9,7 +9,7 @@ local Percent = require("percent")
 local p25 = Percent(25)
 print(40 + p25) -- 50
 print(100 * p25) -- 25
-print(0.25 == p25) -- true
+print(Percent(25) == p25) -- true
 ```
 
 ## How it works:
@@ -20,5 +20,5 @@ print(0.25 == p25) -- true
 - `Percent(50) + Percent(50)` → `0.5 + (50% от 0.5) = 0.75`  
 - `100 * Percent(25)` → `100 * 0.25 = 25`  
 - `Percent(50) * Percent(50)` → `0.5 * 0.5 = 0.25`  
-- Comparisons (`==`, `<`, `<=`) work with numbers and other Percent objects.
+- Comparisons (`==`, `<`, `<=`) work with Percent objects.
 - `tostring(Percent(42))` → `"42%"`
